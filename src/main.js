@@ -1,7 +1,7 @@
 import './assets/main.css'
 import "primeicons/primeicons.css";
 
-import { createApp } from 'vue'
+import { createApp, reactive } from 'vue'
 import App from './App.vue'
 import router from './router'
 import PrimeVue from 'primevue/config'
@@ -11,9 +11,7 @@ import { setLocale } from 'yup';
 import ToastService from 'primevue/toastservice';
 
 setLocale(pt);
-
 window.log = console.log;
-
 const app = createApp(App);
 
 app.use(ToastService);
